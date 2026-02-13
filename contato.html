@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato</title>
+<title>Contato - Nalfer Digital</title>
 
 <style>
 body {
-  background:#0f0f0f;
-  color:white;
-  font-family:Arial;
-  padding:25px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
 }
+
+.container {
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
 .btn {
-  display:block;
-  background:#25D366;
-  padding:15px;
-  text-align:center;
-  border-radius:10px;
-  text-decoration:none;
-  color:white;
-  margin-top:10px;
+  display: block;
+  padding: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
 }
-a {color:#0066ff;}
+
+.whatsapp { background: #25D366; color: white; }
+.instagram { background: #E1306C; color: white; }
+.facebook { background: #1877F2; color: white; }
+.site { background: #0066ff; color: white; }
+
+.voltar {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #aaa;
+  text-decoration: none;
+}
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Contato</h1>
 
-<a class="btn" href="https://wa.me/5511998517392">
-Falar no WhatsApp
+<div class="card">
+
+<a class="btn whatsapp" href="https://wa.me/5511998517392" target="_blank">
+📲 WhatsApp
 </a>
 
-<br>
-<a href="index.html">⬅ Voltar</a>
+<a class="btn instagram" href="https://instagram.com/nalferdigital" target="_blank">
+📸 Instagram
+</a>
+
+<a class="btn facebook" href="https://facebook.com/SEUFACEAQUI" target="_blank">
+📘 Facebook
+</a>
+
+<a class="btn site" href="https://SEUSITEAQUI.com" target="_blank">
+🌐 Site Oficial
+</a>
+
+</div>
+
+<a class="voltar" href="index.html">⬅ Voltar</a>
+
+</div>
 
 </body>
 </html>
-
