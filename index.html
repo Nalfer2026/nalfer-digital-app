@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nalfer Digital</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nalfer Digital</title>
 
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f0f0f">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+  animation: fadeIn 0.8s ease-in;
+}
 
-    .container {
-      padding: 25px;
-      max-width: 500px;
-      margin: auto;
-    }
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 5px;
-    }
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
 
-    .subtitle {
-      text-align: center;
-      color: #aaa;
-      margin-bottom: 30px;
-    }
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 30px;
+}
 
-    .card {
-      background: #1a1a1a;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
 
-    .btn {
-      display: block;
-      text-align: center;
-      padding: 14px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+.card h3 {
+  margin-top: 0;
+}
 
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
+ul {
+  padding-left: 18px;
+}
 
-    .instagram {
-      background: #E1306C;
-      color: white;
-    }
+.btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
 
-    .orcamento {
-      background: #0066ff;
-      color: white;
-    }
+.btn:hover {
+  transform: scale(1.03);
+}
 
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      margin-top: 30px;
-      color: #777;
-    }
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
 
-  </style>
+.instagram {
+  background: #E1306C;
+  color: white;
+}
+
+.orcamento {
+  background: #0066ff;
+  color: white;
+}
+
+.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
+  color: #777;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-  <h1>Nalfer Digital</h1>
-  <p class="subtitle">Soluções inteligentes para negócios locais</p>
+<h1>Nalfer Digital</h1>
+<p class="subtitle">Soluções inteligentes para negócios locais</p>
 
-  <div class="card">
-    <strong>🚀 Serviços:</strong>
-    <ul>
-      <li>Criação de WebApp Instalável</li>
-      <li>Gestão Google Meu Negócio</li>
-      <li>Divulgação Local</li>
-      <li>Tráfego Pago</li>
-    </ul>
-  </div>
+<div class="card">
+<h3>🚀 Serviços</h3>
+<ul>
+<li>WebApp Instalável</li>
+<li>Gestão Google Meu Negócio</li>
+<li>Divulgação Local</li>
+<li>Tráfego Pago</li>
+</ul>
+</div>
 
-  <a class="btn whatsapp" href="https://wa.me/5511998517392" target="_blank">
-    Falar no WhatsApp
-  </a>
+<a class="btn whatsapp" href="https://wa.me/5511998517392" target="_blank">
+Falar no WhatsApp
+</a>
 
-  <a class="btn instagram" href="https://instagram.com/nalferdigital" target="_blank">
-    Ver Instagram
-  </a>
+<a class="btn instagram" href="https://instagram.com/nalferdigital" target="_blank">
+Ver Instagram
+</a>
 
-  <a class="btn orcamento" href="https://wa.me/5511998517392?text=Olá%20quero%20um%20orçamento" target="_blank">
-    Solicitar Orçamento
-  </a>
+<a class="btn orcamento" href="https://wa.me/5511998517392?text=Olá%20quero%20um%20orçamento" target="_blank">
+Solicitar Orçamento
+</a>
 
-  <div class="footer">
-    © 2026 Nalfer Digital
-  </div>
+<div class="footer">
+© 2026 Nalfer Digital
+</div>
 
 </div>
 
+<a class="floating" href="https://wa.me/5511998517392" target="_blank">
+💬
+</a>
+
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
 </script>
 
 </body>
