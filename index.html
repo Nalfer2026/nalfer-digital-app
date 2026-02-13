@@ -12,52 +12,109 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background: #0f0f0f;
       color: white;
-      text-align: center;
     }
 
     .container {
-      padding: 40px 20px;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
 
     .btn {
       display: block;
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 15px;
+      text-align: center;
+      padding: 14px;
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .whatsapp {
       background: #25D366;
       color: white;
     }
 
     .instagram {
       background: #E1306C;
+      color: white;
     }
+
+    .orcamento {
+      background: #0066ff;
+      color: white;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 30px;
+      color: #777;
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Nalfer Digital</h1>
-    <p>Soluções profissionais para negócios locais</p>
 
-    <a class="btn" href="https://wa.me/5511998517392">
-      Falar no WhatsApp
-    </a>
+<div class="container">
 
-    <a class="btn instagram" href="https://instagram.com/nalferdigital">
-      Ver Instagram
-    </a>
+  <h1>Nalfer Digital</h1>
+  <p class="subtitle">Soluções inteligentes para negócios locais</p>
+
+  <div class="card">
+    <strong>🚀 Serviços:</strong>
+    <ul>
+      <li>Criação de WebApp Instalável</li>
+      <li>Gestão Google Meu Negócio</li>
+      <li>Divulgação Local</li>
+      <li>Tráfego Pago</li>
+    </ul>
   </div>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
+  <a class="btn whatsapp" href="https://wa.me/5511998517392" target="_blank">
+    Falar no WhatsApp
+  </a>
+
+  <a class="btn instagram" href="https://instagram.com/nalferdigital" target="_blank">
+    Ver Instagram
+  </a>
+
+  <a class="btn orcamento" href="https://wa.me/5511998517392?text=Olá%20quero%20um%20orçamento" target="_blank">
+    Solicitar Orçamento
+  </a>
+
+  <div class="footer">
+    © 2026 Nalfer Digital
+  </div>
+
+</div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+
 </body>
 </html>
-
