@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalfer Digital</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .btn {
+      display: block;
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #25D366;
+      color: white;
+    }
+
+    .instagram {
+      background: #E1306C;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Nalfer Digital</h1>
+    <p>Soluções profissionais para negócios locais</p>
+
+    <a class="btn" href="https://wa.me/5511998517392">
+      Falar no WhatsApp
+    </a>
+
+    <a class="btn instagram" href="https://instagram.com/nalferdigital">
+      Ver Instagram
+    </a>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
 
